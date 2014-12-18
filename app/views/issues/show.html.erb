@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @issue.client %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @issue.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @issue.date %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @issue.content %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @issue.image %>
+</p>
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>
