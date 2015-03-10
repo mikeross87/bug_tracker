@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Demo</title>
+	<title> SOCi Contact Tracker </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body class="<%= controller.controller_name %>">
+  <div id="banner">
+    <%= image_tag("SOCi-logo.png", :size => "188.5x114.5") %>
+    <%= @page_title || "SOCi Client Contact List" %>
+  </div>
+    <div id="columns">
+  	  <div id="side">
+        <ul>
+          <li><%= link_to 'Home', list_path %></li>
+          <li><a href="">Questions</a></li>
+          <li><%= link_to 'Edit Issue', issues_path %></li>
+          <li><%= link_to 'New Issue', new_issue_path %></li>
+        </ul>
+      </div>
+    <div id="main">
+      <%= yield %>
+    </div>
+  </div>
 </body>
 </html>

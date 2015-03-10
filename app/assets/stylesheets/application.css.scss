@@ -13,3 +13,123 @@
  *= require_tree .
  *= require_self
  */
+
+p.entry{
+      position: relative;
+        left: 250px; 
+        top: -200px;
+
+}
+
+h1{
+	padding-left: 8em;
+}
+
+h3{
+	position: relative;
+      left: 250px;
+      top: 30px;
+}
+
+span{
+	position: relative;
+        left: 250px;
+        top: -70px;
+}
+
+#YP{
+	background: yellow;
+  padding-left: 20px;
+  margin-left: 150px;
+}
+
+#Gannett{
+	background: red;
+  padding-left: 20px;
+  margin-left: 150px;
+}
+
+#Trinity{
+  background: green;
+  padding-left: 20px;
+  margin-left: 150px;
+}
+
+#Other{
+	background: gray;
+  padding-left: 20px;
+  margin-left: 150px;
+}
+
+#WOM{
+	background: #00D5FF;
+  padding-left: 20px;
+  margin-left: 150px;
+}
+
+div#side {
+  margin-top: -3px;
+  padding: 1em 1em 100% 1em;
+  background: #eee9e9;
+  display: inline;
+}
+
+#banner {
+  background: #eee9e9;
+  padding: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: black;
+  text-align: center;
+
+  img {
+    float: left;
+    position: relative;
+      left: -20px;
+      top: -20px;
+      max-height: 118px;
+      max-width: 114.5px;
+
+  }
+}
+
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+#columns {
+  
+  #main {
+    margin-left: 0;
+    background: white;
+
+  }
+
+  #side {
+    float: left;
+    display: block;
+    margin: 0 0 0 0;
+    padding: 1em 1em 100% 1em;
+    background: #eee9e9;
+
+    ul {
+      background-color: #eee9e9;
+
+      li {
+        list-style: none;
+        a {
+          color: black;
+          font-size: small;
+        }
+        a:hover{
+          background-color: white;
+        }
+      }
+    }
+  }
+}

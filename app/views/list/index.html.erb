@@ -1,0 +1,16 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>SOCi Recent Contacts</h1>
+
+<% @issues.each do |issue| %>
+  <div class="entry" id="<%= issue.client %>">
+    <h3><%= issue.client %></h3>
+    <%= image_tag(issue.image, :size => "200x200") %>
+    <p class="entry"><%= sanitize(issue.content) %></p>
+    <div class="price_line">
+  	  <span class="price"> From: <%= issue.name %></span>
+    </div>
+  </div>
+<% end %>
